@@ -1,3 +1,3 @@
 function hp(){
-    window.location.href = "HomePage.html";
+    window.location.href = "index.html";
 };
