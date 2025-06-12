@@ -1,0 +1,79 @@
+<head>
+    <script src="BookNow.js"></script>
+    <link href="BookNow.css" rel="stylesheet">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "eUWnghwAy1bIeVPwO",
+        });
+    })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="topbar">
+        <img src="BDDLogo.png" id="logo">
+        <p id="left">385-222-1098</p> 
+    </div> 
+    <center>
+        <p id="center" onclick="hp()">Blue Diamond Detailing</p>
+    </center>
+
+    <center>
+        <h1 class="title1" style="color: rgb(0, 61, 126);">Book Today!</h1>
+        <form id="bookingform" onsubmit="formsubmit(event)">
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Name:</h1>
+            <input type="text" id="name" class="bf" placeholder="Name">
+            <br>
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Phone:</h1>
+            <input type="tel" id="phone" class="bf" placeholder="(000)-000-0000">
+            <br>
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Email:</h1>
+            <input type="text" id="email" class="bf" placeholder="example@gmail.com">
+            <br>
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Address:</h1>
+            <input type="text" id="address" class="bf" placeholder="Address">
+            <br>
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Car Type:</h1>
+            <select id="cartype" class="bf">
+                <option>Coupe/Sedan</option>
+                <option>Small SUV</option>
+                <option>Large SUV</option>
+                <option>Van</option>
+                <option>Truck</option>
+            </select>
+            <br>
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Service:</h1>
+            <hi class="desc" onclick="sp()">*Click Here To See Services & Prices*</hi>
+            <br><br>
+            <select id="service" class="bf">
+                <option>Full Detail</option>
+                <option>Interior Detail</option>
+                <option>Exterior Detail</option>
+                <option>Disaster Detail</option>
+            </select>
+            <br>
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Discount Code:</h1>
+            <hi class="desc" onclick="bdd()">*Click Here To See Deals</hi>
+            <br><br>
+            <input type="text" id="discount" class="bf" placeholder="Code">
+            <br>
+            <h1 class="title2" style="color: rgb(1, 106, 219);">Agree To Contract:</h1>
+            <hi class="desc" onclick="opencontract()">*Click Here To See Contract</hi>
+            <br><br>
+            <input type="checkbox" id="contractagree" class="bf">
+             <h1 class="title2" style="color: rgb(1, 106, 219);">Digitial Signiture:</h1>
+            <input type="text" id="signiture" class="bf" placeholder="Type First & Last">
+            <br>
+            <br><br><br>
+            <input type="submit" class="bfs">
+        </form>
+    </center>
+
+</body>

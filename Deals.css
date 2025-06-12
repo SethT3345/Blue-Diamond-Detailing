@@ -1,0 +1,47 @@
+#topbar{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+#logo{
+    position: relative;
+    float: right;
+    width: 40px;
+    height: auto;
+    top: -5px;
+}
+#left{
+    font-style: italic;
+    font-family: "Bebas Neue", sans-serif;
+}
+#center{
+    font-family: "Bebas Neue", sans-serif;
+   width: 500px;
+   height: auto;
+   position: relative;
+   top: -50px;
+}
+#center:hover{
+    -webkit-text-fill-color: rgb(57, 82, 122);
+}
+
+
+
+.title1{
+    font-size: xx-large;
+    font-family: "Bebas Neue", sans-serif;
+}
+.divide{
+    width: 80%;
+    border: 1px black solid;
+}
+.title2{
+    font-size: x-large;
+    font-family: "Bebas Neue", sans-serif;
+}
+.desc{
+    font-size: large;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
